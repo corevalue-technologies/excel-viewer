@@ -1,0 +1,106 @@
+body {
+  overflow: hidden;
+}
+.excel-container {
+  height: calc(100vh - 88px);
+  overflow: auto;
+}
+
+#viewer {
+  position: relative;
+  min-height: 100vh;
+}
+
+#fileInput {
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0;
+}
+th, td {
+  border: 1px solid black !important;
+}
+.excelButtons {
+  display: flex;
+  width: 100%;
+  background: gray;
+}
+.excelButtons button {
+  background: lightgray;
+  color: gray;
+  font-size: 12px;
+  padding: 5px;
+}
+.excelButtons button:first-child {
+  border-top-left-radius: 5px;
+}
+.excelButtons button:last-child {
+  border-top-right-radius: 5px;
+}
+.excelButtons button.active {
+  background: white;
+  color: green;
+  font-weight: 600;
+}
+.excelButtons button:focus {
+  outline: none;
+}
+.excel-table {
+  font-size: 12px;
+}
+.excel-table td {
+  padding: 5px !important;
+}
+.excel-table {
+  background: white;
+  height: calc(100% - 70px);
+  min-height: 100%;
+}
+.excel-table tr:nth-child(1) {
+  background: green;
+  color: white;
+  font-weight: 600;
+}
+
+.button {
+  background: green;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.button:hover {
+  color: white;
+}
+
+.navbar {
+  color: green;
+  font-weight: 500;
+  border-bottom: 1px solid green;
+  border-top: 1px solid green;
+}
+
+.navbar p {
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.full-width {
+  width: 100%;
+}
+  
+.no-sheet {
+  font-size: 20px;
+  color: gray;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
